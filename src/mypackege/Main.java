@@ -18,21 +18,23 @@ public class Main {
 
         System.out.println(); //"осталось много времени до нового года" - превратите в "осталось 4 месяца до нового года".
         String NG = "осталось много времени до нового года";
-        System.out.println(NG);
+        System.out.println("до: " + NG);
         NG = NG.replace("много времени", "4 месяца");
-        System.out.println(NG);
+        System.out.println("после: " + NG);
 
         System.out.println();//превратите из предыдущей строки количество месяцев в цифру. Уменьшите ее на единицу. выведите.
+        System.out.println("до: " + NG);
         String[] array = NG.split("\\s");
         Integer i = Integer.parseInt(array[1]);
         i-=1;
         String m = Integer.toString(i);
-        System.out.println(array[0] + " " + m + " " + array[2] + " " + array[3] + " " + array[4] + " " + array[5]);
+        System.out.println("после: " + array[0] + " " + m + " " + array[2] + " " + array[3] + " " + array[4] + " " + array[5]);
+
         System.out.println();//задание со звездочкой: превратить "сосед и децибелы" в "соседи имбецилы"
         String sosed = "сосед и децибелы";
-        System.out.println(sosed);
+        System.out.println("до: " + sosed);
         sosed = sosed.replace(" и децибе", "и имбеци");
-        System.out.println(sosed);
+        System.out.println("после: " + sosed);
 
     }
 }
