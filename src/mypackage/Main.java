@@ -1,8 +1,8 @@
-package mypackege;
+package mypackage;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(); //превратить строку "Шаурмяу" в строку "Шаурма"
+/*        System.out.println(); //превратить строку "Шаурмяу" в строку "Шаурма"
         String line = "Шаурмяу";
         System.out.println("до: " + line);
         line = line.substring(0,5);
@@ -34,7 +34,18 @@ public class Main {
         String sosed = "сосед и децибелы";
         System.out.println("до: " + sosed);
         sosed = sosed.replace(" и децибе", "и имбеци");
-        System.out.println("после: " + sosed);
+        System.out.println("после: " + sosed);*/
+        //цикл интовой переменной от 1 до 5. Когда переменная равна 3, выбросите любое исключение :).
+
+        for (int i = 0; i < 5; i++) {
+            try {
+                int x = i + 1;
+                if (x == 3) throw new Exception(x + " найдено исключение");
+                System.out.println(x);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
 
     }
 }
