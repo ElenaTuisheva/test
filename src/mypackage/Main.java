@@ -1,5 +1,7 @@
 package mypackage;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 /*        System.out.println(); //превратить строку "Шаурмяу" в строку "Шаурма"
@@ -37,15 +39,28 @@ public class Main {
         System.out.println("после: " + sosed);*/
         //цикл интовой переменной от 1 до 5. Когда переменная равна 3, выбросите любое исключение :).
 
-        for (int i = 0; i < 5; i++) {
+/*        for (int i = 0; i < 5; i++) {
             try {
                 int x = i + 1;
                 if (x == 3) throw new Exception(x + " найдено исключение");
                 System.out.println(x);
             } catch (Exception ex) {
                 ex.printStackTrace();
-            }
-        }
+            }*/
+        Scanner vvod = new Scanner(System.in);
+        System.out.println("Веди стороку");
+        String stoka = vvod.nextLine();
+        System.out.println("Введи число");
+        int chiclo = vvod.nextInt();
+        System.out.println("вывод строки " + stoka);
+        System.out.println("вывод числа " + chiclo);
+        Integer str;
+        str = Integer.parseInt(stoka);
+        int sum;
+        sum = chiclo + str;
+        System.out.println("сумма " + sum);
 
     }
+
 }
+
