@@ -54,6 +54,7 @@ public class Main {
         int chiclo = vvod.nextInt();
         System.out.println("вывод строки " + stoka);
         System.out.println("вывод числа " + chiclo);
+        System.out.println("сложение строки и числа " + stoka + chiclo);
         Integer str;
         str = Integer.parseInt(stoka);
         int sum;
